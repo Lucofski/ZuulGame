@@ -1,4 +1,3 @@
- 
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -18,8 +17,8 @@ import java.util.StringTokenizer;
  * known commands, and if the input is not one of the known commands, it returns
  * a command object that is marked as an unknown command.
  * 
- * @author Michael Kolling and David J. Barnes
- * @version 2008.03.30
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.24
  */
 public class Parser {
     private CommandWords commands; // holds all valid command words
@@ -45,13 +44,13 @@ public class Parser {
         System.out.print("> ");     // print prompt
 
         BufferedReader reader = 
-                new BufferedReader(new InputStreamReader(System.in));
+            new BufferedReader(new InputStreamReader(System.in));
         try {
             inputLine = reader.readLine();
         }
         catch(java.io.IOException exc) {
             System.out.println ("There was an error during reading: "
-                    + exc.getMessage());
+                + exc.getMessage());
         }
 
         StringTokenizer tokenizer = new StringTokenizer(inputLine);

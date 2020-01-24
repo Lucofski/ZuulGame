@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\r\n\ This\ class\ is\ part\ of\ the\ "World\ of\ Zuul"\ application.\ "World\ of\ Zuul"\ is\ a\r\n\ very\ simple,\ text\ based\ adventure\ game.\r\n\ \r\n\ A\ "item"\ represents\ a\ device\ that\ you\ can\ be\ used\ in\ the\ scenery\ of\ the\ game.\r\n\ \r\n\ @author\ Tim\ Uil\ and\ Lucas\ Wagenaar\r\n\ @version\ 2020.01.20\r\n
+comment1.params=name\ description
+comment1.target=Item(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Create\ a\ new\ Item.\r\n\ @param\ name\r\n\ @param\ description\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Return\ a\ name\ of\ the\ item.\ \r\n\ @return\ the\ name\r\n
+comment3.params=name
+comment3.target=void\ setName(java.lang.String)
+comment3.text=\r\n\ Define\ the\ name\ of\ the\ item.\r\n\ @param\ name\ the\ name\ to\ set\r\n
+comment4.params=
+comment4.target=java.lang.String\ getDescription()
+comment4.text=\r\n\ Return\ a\ description\ of\ the\ item.\ \ \ \ \ *\ \r\n\ @return\ the\ description\r\n
+comment5.params=description
+comment5.target=void\ setDescription(java.lang.String)
+comment5.text=\r\n\ Define\ the\ description\ of\ the\ item.\r\n\ @param\ description\ the\ description\ to\ set\r\n
+comment6.params=player
+comment6.target=boolean\ useItem(Player)
+comment6.text=\r\n\ Execute\ the\ action\ of\ this\ item.\r\n\ @param\ player\r\n\ @return\r\n
+numComments=7

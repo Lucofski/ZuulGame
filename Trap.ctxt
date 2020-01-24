@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Trap
+comment0.text=\r\n\ \r\n\ The\ Trap\ class\ allows\ the\ creation\ of\ a\ trap\r\n\ -\ The\ trap\ door\ will\ slows\ the\ game\ if\ the\ user\ tries\ to\ go\ through\ it.\r\n\ \r\n\ @author\ Tim\ Uil\ and\ Lucas\ Wagenaar\r\n\ @version\ 2020.01.24\r\n\ \r\n
+comment1.params=
+comment1.target=Trap()
+comment1.text=\r\n\ Create\ a\ random\ trap\r\n\ \r\n\ The\ goal\ of\ this\ method\ is\ to\ choose\ amongst\ \r\n\ rooms\ a\ trap\ which\ consist\ in\ falling\ into\ a\ new\ room\ we\ can\ cross\r\n\ one\ way.\ The\ following\ way\ brings\ the\ player\ to\ the\ bedroom.\r\n\ \r\n
+comment2.params=
+comment2.target=Room\ getChosen_trap()
+comment2.text=\r\n\ @return\ the\ chosen_trap\r\n
+comment3.params=trap
+comment3.target=void\ setChosen_trap(Room)
+comment3.text=\r\n\ @param\ chosen_trap\ the\ chosen_trap\ to\ set\r\n
+comment4.params=
+comment4.target=boolean\ Is_catched_by_trap()
+comment4.text=\r\n\ @return\ the\ is_catched_by_trap\r\n
+comment5.params=trap
+comment5.target=void\ setIs_catched_by_trap(boolean)
+comment5.text=\r\n\ @param\ is_catched_by_trap\ the\ is_catched_by_trap\ to\ set\r\n
+numComments=6

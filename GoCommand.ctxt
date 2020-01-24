@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GoCommand
+comment0.text=\r\n\ GoCommand\ Class\r\n\ \r\n\ @author\ Tim\ Uil\ and\ Lucas\ Wagenaar\r\n\ @version\ 2020.01.24\r\n
+comment1.params=
+comment1.target=GoCommand()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ GoCommand\r\n
+comment2.params=player
+comment2.target=boolean\ execute(Player)
+comment2.text=\ \r\n\ Try\ to\ go\ to\ one\ direction.\ If\ there\ is\ an\ exit,\ enter\ the\ new\r\n\ room,\ otherwise\ print\ an\ error\ message.\ \r\n\ Returns\ 'false'\ when\ games\ continue,\ 'true'\ otherwise;\r\n
+numComments=3

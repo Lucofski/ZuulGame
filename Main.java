@@ -1,10 +1,8 @@
 import java.util.Scanner;
 /**
  * Main class dedicated to start and restart the game
- * @author Alexandre Boursier and Nolan Potier
- * @version 2011.10.24
- * @author Sean Worthington
- * @version 2014.03.01
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.22
  */
 public class Main {
     public static void main(String[] args) {

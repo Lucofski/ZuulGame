@@ -1,8 +1,8 @@
 /**
  * HelpCommand Class
  * 
- * @author Alexandre Boursier and Nolan Potier
- * @version 2011.10.24
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.24
  */
 public class HelpCommand extends Command
 {
@@ -24,7 +24,7 @@ public class HelpCommand extends Command
     @Override
     public boolean execute(Player player)
     {
-        System.out.println("You are in the world of ZUUL no way to get out instead of finding the EXIT DOOR ! MUHAHAHA");
+        System.out.println("You are in the world of ZUUL, and there is no way of getting out! You will have to find an exit! MUHAHAHA!");
         System.out.println(player.getCurrentRoom().getLongDescription());
         System.out.println();
         System.out.println("Your command words are:");

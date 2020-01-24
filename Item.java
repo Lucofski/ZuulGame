@@ -1,18 +1,18 @@
 /**
- * This class is part of the "World of NolsPotLex" application. "World of NolsPotLex" is a
+ * This class is part of the "World of Zuul" application. "World of Zuul" is a
  * very simple, text based adventure game.
  * 
  * A "item" represents a device that you can be used in the scenery of the game.
  * 
- * @author Alexandre Boursier & Nolan Potier
- * @version 2011.10.25
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.20
  */
 
 public class Item {
 
     private String name;
     private String description;
-    
+
     /**
      * Create a new Item.
      * @param name

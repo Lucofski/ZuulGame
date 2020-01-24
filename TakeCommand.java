@@ -2,7 +2,7 @@
  * TakeCommand Class
  * 
  * @author Alexandre Boursier and Nolan Potier
- * @version 2011.10.24
+ * @version 2020.01.24
  */
 public class TakeCommand extends Command
 {

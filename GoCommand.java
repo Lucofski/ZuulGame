@@ -1,8 +1,8 @@
 /**
  * GoCommand Class
  * 
- * @author Alexandre Boursier and Nolan Potier
- * @version 2011.10.24
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.24
  */
 public class GoCommand extends Command
 {

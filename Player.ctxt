@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Player
+comment0.text=\r\n\ This\ class\ represents\ players\ in\ the\ game.\ \r\n\ Each\ player\ has\ a\ current\ location.\r\n\ Externalisation\ of\ the\ current\ room\ \r\n\ \r\n\ @author\ Tim\ Uil\ and\ Lucas\ Wagenaar\r\n\ @version\ 2020.01.24\r\n
+comment1.params=
+comment1.target=Player()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Player\r\n
+comment2.params=
+comment2.target=Room\ getCurrentRoom()
+comment2.text=\r\n\ Return\ the\ current\ room\ for\ this\ player.\r\n
+comment3.params=room
+comment3.target=void\ setCurrentRoom(Room)
+comment3.text=\r\n\ Set\ the\ current\ room\ for\ this\ player.\r\n
+comment4.params=direction
+comment4.target=boolean\ goRoom(java.lang.String)
+comment4.text=\r\n\ Try\ to\ go\ to\ one\ direction.\ If\ there\ is\ an\ exit,\ enter\ the\ new\ room,\r\n\ otherwise\ print\ an\ error\ message.\r\n\ \r\n\ New\ form\ of\ time\ limit\ \:\ Each\ time\ a\ player\ uses\ the\ command\ "GO"\ \r\n\ with\ a\ good\ given\ direction\ (ex\ \:\ go\ east),\ it\ is\ counted\ as\ a\ move\r\n\ \r\n\ All\ cases\ are\ checked\ in\ order\ to\ prevent\ the\ player\ from\ going\ outside\ without\r\n\ the\ key,\ or\ without\ having\ opened\ the\ door,\ etc.\r\n\ \r\n\ If\ the\ number\ of\ moves\ equals\ to\ the\ limit\ number\ of\ moves,\r\n\ \ the\ player\ loses\ the\ game.\r\n\ \ \r\n
+comment5.params=
+comment5.target=java.util.HashMap\ getItems()
+comment5.text=\r\n\ @return\ the\ items\r\n
+comment6.params=items
+comment6.target=void\ setItems(java.util.HashMap)
+comment6.text=\r\n\ @param\ items\ the\ items\ to\ set\r\n
+comment7.params=item
+comment7.target=void\ addItem(Item)
+comment7.text=\r\n\ Add\ a\ item\ to\ inventory\ of\ player.\r\n\ @param\ item\r\n
+numComments=8

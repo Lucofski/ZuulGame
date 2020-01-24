@@ -1,5 +1,5 @@
 /**
- * This class is part of the "NolsPotLex" application. "NolsPotLex" is a
+ * This class is part of the "World of Zuul" application. "World of Zuul" is a
  * very simple, text based adventure game.
  * 
  * This class holds information about a command that was issued by the user. A
@@ -13,8 +13,8 @@
  * 
  * If the command had only one word, then the second word is <null>.
  * 
- * @author Michael Kolling and David J. Barnes and Alexandre Boursier and Nolan Potier
- * @version 2011.10.28
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.24
  */
 
 public abstract class Command {

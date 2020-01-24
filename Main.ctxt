@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\r\n\ Main\ class\ dedicated\ to\ start\ and\ restart\ the\ game\r\n\ @author\ Tim\ Uil\ and\ Lucas\ Wagenaar\r\n\ @version\ 2020.01.22\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

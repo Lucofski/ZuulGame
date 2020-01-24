@@ -1,14 +1,14 @@
 import java.util.HashMap;
 
 /**
- * This class is part of the "NolsPotLex" application. "NolsPotLex" is a
+ * This class is part of the "World of Zuul" application. "World of Zuul" is a
  * very simple, text based adventure game.
  * 
  * This class holds an enumeration of all command words known to the game. It is
  * used to recognise commands as they are typed in.
  * 
- * @author Michael Kolling and David J. Barnes and aAlexandre Boursier and Nolan Potier
- * @version 2011.10.28
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.24
  */
 
 public class CommandWords {

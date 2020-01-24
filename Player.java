@@ -5,8 +5,8 @@ import java.util.HashMap;
  * Each player has a current location.
  * Externalisation of the current room 
  * 
- * @author Alexandre Boursier & Nolan Potier
- * @version 2011.10.24
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.24
  */
 public class Player
 {
@@ -66,7 +66,7 @@ public class Player
         if(currentRoom.getDoor(direction).isLocked()) 
         {
             if(items.get("Banana")==null) {
-                System.out.println("That gorilla won't let you passed! You will need a banana");
+                System.out.println("That gorilla won't let you pass! You will need a banana to lure it away!");
                 boolean decision = Game.countMove();     
                 return decision;
             }
@@ -98,7 +98,7 @@ public class Player
             if (!Trap.Is_catched_by_trap() && currentRoom.getType().equals(Trap.getChosen_trap().getType()))
             {
                 System.out.println();
-                System.out.println("----You travel through the portal and are now in a new room -----------");
+                System.out.println("----You travel through the portal and enter a new room -----------");
                 System.out.println();
 
                 for(Room r : Game.getRooms()){

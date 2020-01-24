@@ -1,11 +1,11 @@
 /**
- * This class is part of the "World of NolsPotLex" application. "World of NolsPotLex" is a
+ * This class is part of the "World of Zuul" application. "World of Zuul" is a
  * very simple, text based adventure game.
  * 
  * A "Character" represents a person in the scenery of the game. He can give you some indications.
  * 
- * @author Alexandre Boursier & Nolan Potier
- * @version 2011.10.25
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.24
  */
 public class Character {
 

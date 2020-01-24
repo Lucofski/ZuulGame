@@ -3,8 +3,8 @@
  * The Trap class allows the creation of a trap
  * - The trap door will slows the game if the user tries to go through it.
  * 
- * @author Alexandre Boursier and Nolan Potier
- * @version 2011.10.24
+ * @author Tim Uil and Lucas Wagenaar
+ * @version 2020.01.24
  * 
  */
 public class Trap {

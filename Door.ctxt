@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Door
+comment0.text=\r\n\ This\ class\ is\ part\ of\ the\ "World\ of\ Zuul"\ application.\ "World\ of\ Zuul"\ is\ a\r\n\ very\ simple,\ text\ based\ adventure\ game.\r\n\ \r\n\ A\ "Door"\ represents\ an\ exit\ in\ room\ of\ the\ scenery\ of\ the\ game.\r\n\ \r\n\ @author\ Tim\ Uil\ and\ Lucas\ Wagenaar\r\n\ @version\ 2020.10.25\r\n
+comment1.params=name
+comment1.target=Door(java.lang.String)
+comment1.text=\r\n\ Creates\ a\ new\ door.\r\n\ @param\ name\ is\ the\ name\ of\ the\ door.\r\n
+comment2.params=value
+comment2.target=void\ setLock(java.lang.Boolean)
+comment2.text=\r\n\ Locks\ or\ unlocks\ the\ door.\r\n\ @param\ value\ true\ if\ we\ want\ to\ lock\ the\ door,\ false\ otherwise.\r\n
+comment3.params=
+comment3.target=java.lang.Boolean\ isLocked()
+comment3.text=\r\n\ Indicates\ whether\ the\ door\ is\ locked\ or\ not.\r\n\ @return\ true\ if\ the\ door\ is\ locked,\ false\ otherwise.\r\n
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment4.text=\r\n\ @return\ the\ name\r\n
+comment5.params=name
+comment5.target=void\ setName(java.lang.String)
+comment5.text=\r\n\ @param\ name\ the\ name\ to\ set\r\n
+numComments=6

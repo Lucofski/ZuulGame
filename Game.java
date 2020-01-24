@@ -22,8 +22,8 @@ import java.util.Scanner;
  * - The room "TOILETS" randomly teleports the player into another.
  * - To win the game, you have to reach the room "OUTSIDE".
  * 
- * @author Michael Kolling and David J. Barnes and Alexandre Boursier and Nolan Potier
- * @version 2011.10.24
+ * @author Michael Kolling and David J. Barnes and Tim Uil and Lucas Wagenaar
+ * @version 2020.01.24
  */
 
 public class Game {
@@ -84,18 +84,18 @@ public class Game {
         outside = new Room("outside\n in front of you stands an amazing temple\nQuickly go for it" , Type.OUTSIDE);
         topaz_temple = new Room("in the topaz temple\nOver there is a sign\n 'Hello pilsmaister you're trapped and there is only one way out good luck!!'", Type.TOPAZ_TEMPLE);
         ruby_temple = new Room("in the ruby temple.\nOh shit that gorilla on the north looks hungry. I can't passed him" , Type.RUBY_TEMPLE);
-        diamond_temple = new Room("in the diamond temple.\nWhat is that on the west it's looks weird.... a teleport or something", Type.DIAMOND_TEMPLE);
-        teleporter = new Room("You are telported to this room with four teleports and a ladder going up and down.\nOn a sign stands: 'Choose wisley it could help you'", Type.TELEPORTER);
-        jungle = new Room("in the jungle. There is a banana on the ground.\nWhy are all that monkey's in the trees watching me. It is freaking me out", Type.JUNGLE);
-        emerald_temple = new Room("in the emerald temple.\nOh no not a second gorilla but now on the east", Type.EMERALD_TEMPLE);
-        trap_room = new Room("in an empty room with a opening to the east and on the west it's again that gorilla." , Type.TRAP_ROOM);
-        sunstone_temple = new Room("in the sunstone temple.\nIt's pretty here isn't it??\n You can stay here forever if you want or if you don't want ", Type.SUNSTONE_TEMPLE);
+        diamond_temple = new Room("in the diamond temple.\nWhat is that in the west it's looks weird.... a teleport or something", Type.DIAMOND_TEMPLE);
+        teleporter = new Room("You are telported to this room with four teleports and a ladder going up and down.\nA sign near it says: 'Choose wisley it could help you'", Type.TELEPORTER);
+        jungle = new Room("in the jungle. There is a banana on the ground.\nWhy are all that monkey's in the trees watching me. It is freaking you out", Type.JUNGLE);
+        emerald_temple = new Room("in the emerald temple.\nOh no, there is a second gorilla but now in the east", Type.EMERALD_TEMPLE);
+        trap_room = new Room("in an empty room with a opening to the east and on the west there is that gorilla again." , Type.TRAP_ROOM);
+        sunstone_temple = new Room("in the sunstone temple.\nIt's pretty here isn't it??\n You can stay here forever if you want or not ", Type.SUNSTONE_TEMPLE);
         amethyst_temple = new Room("in the amethyst_temple." , Type.AMETHYST_TEMPLE);
-        landing_room = new Room("in the landing room.\nIt doesn't feel good here.. I need to go. Quick!!", Type.LANDING_ROOM);
+        landing_room = new Room("in the landing room.\nIt doesn't feel good here... You'd beter get out of here. Quick!!", Type.LANDING_ROOM);
         victory = new Room("You made it!.", Type.VICTORY);
-        
+
         //Create character
-        Character Bubbles = new Character("oe-oe-OE-oe", "monkey translater: Go quikly you are running out of time!!");
+        Character Bubbles = new Character("oe-oe-OE-oe", "monkey translater: Go quickly, you are running out of time!!");
 
         amethyst_temple.addCharacter(Bubbles);
 
@@ -103,13 +103,13 @@ public class Game {
         getPlayer().setCurrentRoom(outside); 
         randomRoom = amethyst_temple;
     }
-    
+
     /**
      * Initialise items
      */
     private void createItems() {
         Item Banana;
-        Banana = new Item("Banana", "Maybe the gorilla wants a banana");
+        Banana = new Item("Banana", "Maybe you can lure the gorilla away with the banana");
         items.put(Banana.getName().toLowerCase(), Banana);
     }
 
@@ -127,27 +127,27 @@ public class Game {
         ruby_temple.setDoor("north", emerald_temple, true);
         ruby_temple.setDoor("east", jungle, false);
         ruby_temple.setDoor("south", diamond_temple, false);
-        
+
         jungle.setDoor("west", ruby_temple, false);
 
         diamond_temple.setDoor("west", teleporter, false);
         diamond_temple.setDoor("north", ruby_temple, false);
-   
+
         emerald_temple.setDoor("east", trap_room, true);
         emerald_temple.setDoor("south", ruby_temple, false);
         emerald_temple.setDoor("west", amethyst_temple, false);     
 
         amethyst_temple.setDoor("east", emerald_temple, false);
-        
+
         trap_room.setDoor("east", landing_room, false);
         trap_room.setDoor("west", emerald_temple, true);
 
         landing_room.setDoor("north", sunstone_temple, false);
         landing_room.setDoor("west", trap_room, false);
-        
+
         sunstone_temple.setDoor("south", landing_room, false);
         sunstone_temple.setDoor("up", victory, false);
-        
+
         teleporter.setDoor("north", outside, false);
         teleporter.setDoor("east", jungle, false);
         teleporter.setDoor("south", amethyst_temple, false);
@@ -224,7 +224,7 @@ public class Game {
     private void printWelcome() {
         System.out.println();
         System.out.println("Welcome to Zuul!");
-        
+
         chooseLevel();
 
         System.out.println("Type help if you need help.");
@@ -250,19 +250,19 @@ public class Game {
         // Find the chosen level and alter the number of moves accorfing to the chosen one
         try {
             switch (reader.nextInt()) {
-            case 0:
+                case 0:
                 limitOfMoves = 20;
                 System.out.println("You don't trust yourself? A bit harder next time! - Number of moves : " + limitOfMoves);
                 break;
-            case 1:
+                case 1:
                 limitOfMoves = 16;
                 System.out.println("Medium? alright let's go! - Number of moves : " + limitOfMoves);
                 break;
-            case 2:
+                case 2:
                 limitOfMoves = 14;
                 System.out.println("Yess finaly a real gamer!  - Number of moves : " + limitOfMoves);
                 break;
-            default:
+                default:
                 limitOfMoves = 20;
                 System.out.println("Unkown command - Default level : Easy - Number of moves : " + limitOfMoves);
                 break;
@@ -309,7 +309,7 @@ public class Game {
                 getPlayer().setCurrentRoom(r);
             }
         }
-        System.out.println("\n ------- You are teleported to a random room. -------\n");
+        System.out.println("\n ------- You have been teleported to a random room. -------\n");
     }
 
     /**
